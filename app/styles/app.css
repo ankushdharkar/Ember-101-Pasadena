@@ -1,0 +1,48 @@
+html, body{ 
+
+	margin: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: #e1e2e3;
+}
+
+.nav-bar-app{
+	width: 100%;
+	height: 30px;
+	background-color: #FAEBD7;
+	display: block;
+}
+
+
+.first-name{
+	font-size: 20px;
+	display: block;
+}
+
+.name-input{
+	font-size: 16px;
+	display: block;
+}
+
+
+.stock-card{
+	float: left;
+	background-color:#404040;
+	height: 350px;
+	width: 250px;
+	margin: 25px;
+	border-radius: 8px;
+}
+
+
+.stock-name{
+	color: white;
+	font-size: 25px;
+
+	text-align: center;
+	font: 'arial';
+	
+
+	margin-top: 100px;
+}

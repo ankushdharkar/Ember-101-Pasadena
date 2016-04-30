@@ -1,0 +1,18 @@
+{{#if isUserLoggedIn}}
+
+	<div class="first-name">
+		Hello {{firstName}}
+	</div>
+
+	{{input value=firstName class="name-input"}}
+	
+	<button {{action "sendNameWasClicked"}} > Send Name </button>
+
+	{{outlet}}
+
+
+{{else}}
+	
+	<p> Please Login </p>
+
+{{/if}}

@@ -1,0 +1,19 @@
+
+
+<button {{action "changeData"}}> click </button>
+
+
+
+{{#each stocksArr as |stock|}}
+
+
+	{{display-stock 
+		stockName=stock.name
+		stockSymbol=stock.symbol
+		stockPrice=stock.price
+	}}
+
+
+{{/each}}
+
+
