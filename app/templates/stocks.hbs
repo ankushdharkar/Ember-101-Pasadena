@@ -3,17 +3,28 @@
 <button {{action "changeData"}}> click </button>
 
 
-
-{{#each stocksArr as |stock|}}
-
-
-	{{display-stock 
-		stockName=stock.name
-		stockSymbol=stock.symbol
-		stockPrice=stock.price
-	}}
+{{#if isEverythingShown}}
 
 
-{{/each}}
+		{{#each stocksArr as |stock|}}
 
 
+			{{display-stock 
+				
+				stockName=stock.name
+				stockSymbol=stock.symbol
+				stockPrice=stock.price
+
+				actionToDo=(action 'secretThing')
+	
+
+			}}
+
+
+		{{/each}}
+
+{{else}}
+
+	We are working with just {{singleStockName}} right now
+
+{{/if}}

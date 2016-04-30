@@ -14,6 +14,13 @@ export default Ember.Component.extend({
 
 	didInsertElement(){
 		//console.info("I loaded");
+	},
+
+
+	actions:{
+		componentBtnClicked(){
+			this.get('actionToDo')();
+		}
 	}
 
 

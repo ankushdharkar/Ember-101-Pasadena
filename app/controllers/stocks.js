@@ -2,6 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
+	isEverythingShown: true,
+
 	stocksArr: [
 		{
 			name:"Apple",
@@ -25,9 +27,14 @@ export default Ember.Controller.extend({
 		}
 	],
 
+
+	hurraySomethingHappened(valArg){
+		Ember.$('body').css('background-color', 'blue');
+	},
+
+
 	actions:{
 		changeData(){
-
 
 			var msElem = this.get('stocksArr').objectAt(0);
 			Ember.set( msElem,'symbol', '$$$');
@@ -37,9 +44,10 @@ export default Ember.Controller.extend({
 			// 	currentPrice:"100",
 			// 	symbol: "$$$"
 			// };
+		},
 
-
-	
+		secretThing(v){
+			this.hurraySomethingHappened(v);
 		}
 	}
 
